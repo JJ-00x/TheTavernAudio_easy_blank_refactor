@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{b303fe08-6fcd-436a-9d57-2b551df69041}">
+		<property name="volume">
+			<value>-7.5</value>
+		</property>
+		<property name="name">
+			<value>Ambient</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{a3eb2ef7-1b1d-41c5-86e1-4f0311513934}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{41bb4ad6-fd07-4f86-b9e8-7ee45e9244ff}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{b2c46db0-4125-4251-a9bf-d80f93bd2cc5}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{a3eb2ef7-1b1d-41c5-86e1-4f0311513934}">
+		<relationship name="effects">
+			<destination>{86c322b3-8cec-4cac-bd8a-0e13f4818a42}</destination>
+			<destination>{d7150a9f-c142-4bb1-b541-8aa4202b5149}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{41bb4ad6-fd07-4f86-b9e8-7ee45e9244ff}" />
+	<object class="MixerBusFader" id="{86c322b3-8cec-4cac-bd8a-0e13f4818a42}" />
+	<object class="MultibandEqEffect" id="{d7150a9f-c142-4bb1-b541-8aa4202b5149}" />
+</objects>

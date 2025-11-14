@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerReturn" id="{2dae0912-8186-49b8-b721-ffc4069c1f8e}">
+		<property name="name">
+			<value>Distortion</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{ad0c34df-1295-4909-a74f-c7b397b8974f}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{c5797d4c-9ce1-4bf2-ac69-cae35e5d8d99}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{b2c46db0-4125-4251-a9bf-d80f93bd2cc5}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{ad0c34df-1295-4909-a74f-c7b397b8974f}">
+		<relationship name="effects">
+			<destination>{c659d7c1-a615-4332-a127-52f1b1926e18}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{c5797d4c-9ce1-4bf2-ac69-cae35e5d8d99}" />
+	<object class="MixerBusFader" id="{c659d7c1-a615-4332-a127-52f1b1926e18}" />
+</objects>
