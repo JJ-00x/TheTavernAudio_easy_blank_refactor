@@ -10,7 +10,7 @@ public class Outside_foot_switch : MonoBehaviour
     [SerializeField]
     private bool snapshotActivated = false;
 
-    // Odległość do podłoża od środka kolidera.
+    // Odległość do podłoża od środka collidera.
     private float distToGround;
 
     // FMOD - Instancja snapshotu.

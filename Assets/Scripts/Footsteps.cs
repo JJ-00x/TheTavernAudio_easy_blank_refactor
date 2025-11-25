@@ -76,7 +76,7 @@ public class Footsteps : MonoBehaviour
     private void PlayFootsteps()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 0.5f))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 1))
         {
             string surfaceTag = hit.collider.tag;
             PlaySurfaceSound(footstepsSoundInstance, footstepsEvent, surfaceTag);
@@ -91,7 +91,7 @@ public class Footsteps : MonoBehaviour
         if (IsGrounded())
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 0.5f))
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 1))
             {
                 string surfaceTag = hit.collider.tag;
                 PlaySurfaceSound(jumpSoundInstance, jumpEvent, surfaceTag);
@@ -118,7 +118,7 @@ public class Footsteps : MonoBehaviour
     private void PlayLanding()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 0.5f))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 1))
         {
             string surfaceTag = hit.collider.tag;
             PlaySurfaceSound(landSoundInstance, landEvent, surfaceTag);
@@ -132,7 +132,7 @@ public class Footsteps : MonoBehaviour
     /// ZASTĘPUJE SŁOWNIK instrukcją SWITCH.
     /// </summary>
     /// <param name="soundInstance">Instancja dźwięku FMOD.</param>
-    /// <param name="eventRef">Referencja do zdarzenia FMOD.</param>
+    /// <param name="eventRef">Referencja do eventu FMOD.</param>
     /// <param name="surfaceTag">Tag powierzchni, na której znajduje się gracz.</param>
     private void PlaySurfaceSound(FMOD.Studio.EventInstance soundInstance, EventReference eventRef, string surfaceTag)
     {
@@ -162,9 +162,9 @@ public class Footsteps : MonoBehaviour
         if (surfaceParameter != null)
         {
             soundInstance = RuntimeManager.CreateInstance(eventRef);
-            soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject.transform));
+            soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject.transform)); //przyczepienie instancji do playera / obiektu w którym podpięty jest ten skrypt
             // Ustawia parametr FMOD na podstawie ustalonej wartości.
-            soundInstance.setParameterByNameWithLabel("Footsteps_surface", surfaceParameter); 
+            soundInstance.setParameterByNameWithLabel("Footstep_Surface", surfaceParameter); 
             soundInstance.start();
             soundInstance.release();
         }
