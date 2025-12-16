@@ -162,6 +162,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 15
   Length: 0
+--- !u!114 &-5883584196058962990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Outside
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Outside
+  Guid:
+    Data1: -1741794161
+    Data2: 1108615977
+    Data3: 1187233678
+    Data4: 1243265079
+  Banks:
+  - {fileID: -887124640315973910}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-5365505877802993541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,10 +436,10 @@ MonoBehaviour:
   Path: Assets/FMOD Studio/Tavern1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638996958388380671
+  lastModified: 639015095369155504
   FileSizes:
   - Name: Desktop
-    Value: 1668
+    Value: 1716
   Exists: 1
 --- !u!114 &-1851541973646151986
 MonoBehaviour:
@@ -477,10 +504,10 @@ MonoBehaviour:
   Path: Assets/FMOD Studio/Tavern1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638996958388307966
+  lastModified: 639015095369082483
   FileSizes:
   - Name: Desktop
-    Value: 6929056
+    Value: 6929376
   Exists: 1
 --- !u!114 &-846103250026048817
 MonoBehaviour:
@@ -562,14 +589,15 @@ MonoBehaviour:
   - {fileID: -9104634132856153171}
   - {fileID: -319968168463691804}
   - {fileID: -7516857925656287451}
-  - {fileID: 8640997002927962432}
+  - {fileID: -5883584196058962990}
+  - {fileID: 6984312896207989823}
   EditorParameters: []
   MasterBanks:
   - {fileID: -887124640315973910}
   StringsBanks:
   - {fileID: -3194449910969234094}
   cacheVersion: 131856
-  cacheTime: 638996958388380671
+  cacheTime: 639015095369155504
   SerializableEventsDict:
   - key: event:/Ambient/sfx_ambient_forest
     index: 0
@@ -587,8 +615,10 @@ MonoBehaviour:
     index: 6
   - key: event:/Player/sfx_player_land
     index: 7
-  - key: snapshot:/New Snapshot
+  - key: snapshot:/Outside
     index: 8
+  - key: snapshot:/Inside_Room
+    index: 9
 --- !u!114 &190630785698382198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -805,6 +835,33 @@ MonoBehaviour:
   - Stone
   - Wood
   Exists: 1
+--- !u!114 &6984312896207989823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Inside_Room
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Inside_Room
+  Guid:
+    Data1: 914815976
+    Data2: 1223931837
+    Data3: 663363466
+    Data4: 1207334591
+  Banks:
+  - {fileID: -887124640315973910}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &7684572207288166557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,30 +940,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 501
---- !u!114 &8640997002927962432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/New Snapshot
-  m_EditorClassIdentifier: 
-  Path: snapshot:/New Snapshot
-  Guid:
-    Data1: 705020922
-    Data2: 1232843199
-    Data3: -870105701
-    Data4: -2129596442
-  Banks:
-  - {fileID: -887124640315973910}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0

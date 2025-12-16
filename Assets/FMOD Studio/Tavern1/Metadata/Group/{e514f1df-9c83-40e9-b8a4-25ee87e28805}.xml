@@ -18,6 +18,8 @@
 		<relationship name="effects">
 			<destination>{e3a8e878-8119-4b1c-8856-5bbc8107d97b}</destination>
 			<destination>{2b07cedf-e62e-4071-bdc7-7d4103623867}</destination>
+			<destination>{0356fbff-9d94-47d0-9c6f-e92f068443a4}</destination>
+			<destination>{d245ae71-996a-4285-8753-5ea3eef0168f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e50bce54-a226-4578-b469-b562f98b8e21}" />
@@ -30,4 +32,6 @@
 			<value>0.676091015</value>
 		</property>
 	</object>
+	<object class="DistortionEffect" id="{0356fbff-9d94-47d0-9c6f-e92f068443a4}" />
+	<object class="ChorusEffect" id="{d245ae71-996a-4285-8753-5ea3eef0168f}" />
 </objects>
