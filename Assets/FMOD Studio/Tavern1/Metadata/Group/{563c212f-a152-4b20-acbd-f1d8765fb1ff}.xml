@@ -7,6 +7,10 @@
 		<property name="name">
 			<value>Player</value>
 		</property>
+		<relationship name="masters">
+			<destination>{d2a2d7bb-3a63-4473-a1cc-c7f50869d8f1}</destination>
+			<destination>{23d8aa17-fb33-4fa0-8b1f-a2481cdb513c}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{e413e428-877c-451d-93db-7c3fc3e3b94f}</destination>
 		</relationship>

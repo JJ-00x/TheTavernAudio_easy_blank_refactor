@@ -436,10 +436,10 @@ MonoBehaviour:
   Path: Assets/FMOD Studio/Tavern1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639015095369155504
+  lastModified: 639035769432380140
   FileSizes:
   - Name: Desktop
-    Value: 1716
+    Value: 1968
   Exists: 1
 --- !u!114 &-1851541973646151986
 MonoBehaviour:
@@ -504,10 +504,10 @@ MonoBehaviour:
   Path: Assets/FMOD Studio/Tavern1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639015095369082483
+  lastModified: 639035769432349277
   FileSizes:
   - Name: Desktop
-    Value: 6929376
+    Value: 6930144
   Exists: 1
 --- !u!114 &-846103250026048817
 MonoBehaviour:
@@ -597,7 +597,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -3194449910969234094}
   cacheVersion: 131856
-  cacheTime: 639015095369155504
+  cacheTime: 639035769432380140
   SerializableEventsDict:
   - key: event:/Ambient/sfx_ambient_forest
     index: 0
