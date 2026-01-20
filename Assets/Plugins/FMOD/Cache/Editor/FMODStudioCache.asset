@@ -189,6 +189,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-5455609061962583342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interaction/sfx_tavern_fireplace_off
+  m_EditorClassIdentifier: 
+  Path: event:/Interaction/sfx_tavern_fireplace_off
+  Guid:
+    Data1: -796513937
+    Data2: 1206620703
+    Data3: -1960459841
+    Data4: 1035616830
+  Banks:
+  - {fileID: -887124640315973910}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5365505877802993541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,10 +463,10 @@ MonoBehaviour:
   Path: Assets/FMOD Studio/Tavern1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639035769432380140
+  lastModified: 639045337117063242
   FileSizes:
   - Name: Desktop
-    Value: 1968
+    Value: 2180
   Exists: 1
 --- !u!114 &-1851541973646151986
 MonoBehaviour:
@@ -504,10 +531,10 @@ MonoBehaviour:
   Path: Assets/FMOD Studio/Tavern1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639035769432349277
+  lastModified: 639045337117009275
   FileSizes:
   - Name: Desktop
-    Value: 6930144
+    Value: 7253216
   Exists: 1
 --- !u!114 &-846103250026048817
 MonoBehaviour:
@@ -591,13 +618,18 @@ MonoBehaviour:
   - {fileID: -7516857925656287451}
   - {fileID: -5883584196058962990}
   - {fileID: 6984312896207989823}
+  - {fileID: -5455609061962583342}
+  - {fileID: 6783828719754534666}
+  - {fileID: 2790883424787565764}
+  - {fileID: 6577406274854207210}
+  - {fileID: 3128498978634759333}
   EditorParameters: []
   MasterBanks:
   - {fileID: -887124640315973910}
   StringsBanks:
   - {fileID: -3194449910969234094}
   cacheVersion: 131856
-  cacheTime: 639035769432380140
+  cacheTime: 639045337117063242
   SerializableEventsDict:
   - key: event:/Ambient/sfx_ambient_forest
     index: 0
@@ -619,6 +651,16 @@ MonoBehaviour:
     index: 8
   - key: snapshot:/Inside_Room
     index: 9
+  - key: event:/Interaction/sfx_tavern_fireplace_off
+    index: 10
+  - key: event:/Interaction/sfx_tavern_fireplace_on
+    index: 11
+  - key: event:/Interaction/sfx_tavern_barrel
+    index: 12
+  - key: event:/Interaction/sfx_tavern_knife
+    index: 13
+  - key: event:/Interaction/sfx_tavern_bottles
+    index: 14
 --- !u!114 &190630785698382198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -728,6 +770,60 @@ MonoBehaviour:
   - Stone
   - Wood
   Exists: 1
+--- !u!114 &2790883424787565764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interaction/sfx_tavern_barrel
+  m_EditorClassIdentifier: 
+  Path: event:/Interaction/sfx_tavern_barrel
+  Guid:
+    Data1: 1023248516
+    Data2: 1090197699
+    Data3: -759694422
+    Data4: 1696952274
+  Banks:
+  - {fileID: -887124640315973910}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3128498978634759333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interaction/sfx_tavern_bottles
+  m_EditorClassIdentifier: 
+  Path: event:/Interaction/sfx_tavern_bottles
+  Guid:
+    Data1: 1779429335
+    Data2: 1198045739
+    Data3: 1786697638
+    Data4: -138069850
+  Banks:
+  - {fileID: -887124640315973910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &3946008239103829551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,6 +931,60 @@ MonoBehaviour:
   - Stone
   - Wood
   Exists: 1
+--- !u!114 &6577406274854207210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interaction/sfx_tavern_knife
+  m_EditorClassIdentifier: 
+  Path: event:/Interaction/sfx_tavern_knife
+  Guid:
+    Data1: 1881421489
+    Data2: 1189018179
+    Data3: 839843761
+    Data4: -1968197325
+  Banks:
+  - {fileID: -887124640315973910}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6783828719754534666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interaction/sfx_tavern_fireplace_on
+  m_EditorClassIdentifier: 
+  Path: event:/Interaction/sfx_tavern_fireplace_on
+  Guid:
+    Data1: 71936137
+    Data2: 1163892436
+    Data3: 551016339
+    Data4: 46315986
+  Banks:
+  - {fileID: -887124640315973910}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6984312896207989823
 MonoBehaviour:
   m_ObjectHideFlags: 0
